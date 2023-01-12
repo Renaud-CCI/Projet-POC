@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet POC</title>
+    <script src="https://kit.fontawesome.com/77138ed848.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img id="logo" src="./logo.png" alt="logo">CrocoShop</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Billeterie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Merch</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btnSearch" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <section class="container d-flex justify-content-center">
+        <div id="animDiv" class="col d-flex">
+            <div id="name" class="col-3 container m-auto p-2 align-items-center">
+                <h1>Maillot exterieur</h1>
+                <p id="price">60€</p>
+                <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </p>
+            </div>
+            <div id="photo" class="col-6 d-flex m-0 p-0 align-items-center">
+                <img class="maillot" src="./maillot.png" alt="maillot noir">
+            </div>
+            <div id="purchase" class="col-3 m-auto p-2 text-center">
+                <p>Achetez vite le maillot pour le passage éclair de Nîmes Olympique en Ligue 2, après la Ligue 1 et avant le National 2 !</p>
+                <hr>
+                <form>
+                    <label for="quantity">Quantité</label>
+                    <br>
+                    <button class="btn" type="button" id="decrement">-</button>
+                    <input type="text" id="quantity" value="1" />
+                    <button class="btn" type="button" id="increment">+</button>
+                    <br>
+                    <button type="submit" class="validate btn"><i class="fa-sharp fa-solid fa-basket-shopping"></i> Ajouter</button>
+                </form>
+                  
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/77138ed848.js" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+
+</body>
+</html>

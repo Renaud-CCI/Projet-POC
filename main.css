@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Fredoka One', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+}
+
+p, form, nav{
+    font-family: 'Fredoka One', cursive;
+    color: #b5b5b5;
+}
+
+h1{
+    font-family: 'Fredoka One', cursive;
+    color:rgb(44 44 44);
+}
+
+#logo{
+    width: 25px;
+}
+
+.navbar-brand{
+    margin-right: 50px;
+}
+
+.btnSearch{
+    border: 1px solid rgb(253, 0, 0);
+    color: rgb(253, 0, 0);
+}
+
+.btnSearch:hover{
+    background-color: rgb(253, 0, 0);
+    border: 1px solid white;
+    color: white;
+}
+
+body{
+    background-image: url(./wallpaper.jpg);
+    background-size: 1920px 950px;
+    background-position: top;
+}
+
+#animDiv{
+    height:60%;
+    width: 40%;
+    margin-top: 6%;
+    position:absolute;
+    justify-content: center;
+    top: 100px;
+    transition: width 0.5s ease-in-out;
+    background-color: rgba(253, 0, 0, 0.603);
+}
+#animDiv:hover{
+    width: 60%;
+}
+
+#name{
+    width:33%;
+    transition: width 0.5s;
+    vertical-align: middle;
+}
+
+#animDiv:hover #name{
+    width:25%;
+}
+
+#photo{
+    justify-content: center;
+    width:66%;
+    transition: width 0.5s;
+    text-align: center;
+}
+
+.maillot{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#animDiv:hover #photo{
+    width:50%;
+}
+
+#purchase{
+    width:0%;
+    visibility: hidden;
+    transition: width 0.5s;
+
+}
+
+#animDiv:hover #purchase{
+    width:25%;
+    visibility:visible;
+    animation-name: displayBlock;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in-out;
+ 
+}
+
+#quantity{
+    width:15%;
+}
+
+.validate{
+    border: 2px solid ; 
+    background-color: rgb(44 44 44);
+    color: #b5b5b5;
+}
+
+.validate:hover{
+    border: 2px solid rgb(44 44 44); 
+    background-color:#b5b5b5 ;
+    color: rgb(44 44 44);
+}
+
+@keyframes displayBlock {
+    0%{  
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #animDiv{width: 70%;}
+    #animDiv:hover{width: 90%;} 
+}
+
+@media screen and (max-width: 570px){
+    #animDiv{width: 85%;}
+    #animDiv:hover{width: 95%;} 
+    #animDiv:hover #name{width:30%;}
+    #animDiv:hover #photo{width:40%;}
+    #animDiv:hover #purchase{width:30%;}
+}
